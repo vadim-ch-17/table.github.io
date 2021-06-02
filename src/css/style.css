@@ -46,9 +46,24 @@ tr:nth-of-type(odd):not(:first-child)  {background-color: rgb(191, 246, 191);}
 	font-weight: 800;
 	background-color: #fff;
 }
-
-@media  (max-width: 768px) {
-    .table_overflow	{
-    	overflow-x:auto;
+.table_overflow	{
+    	overflow-x:scroll;
+    	 
     }
+    .table_overflow::-webkit-scrollbar{
+    	height: 20px;
+    }
+    .table_overflow::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 0.5em;
+
+}
+/*.table_overflow::-webkit-scrollbar-button:single-button {
+    background-color: grey;
+    display: block;
+    background-size: 20px;
+
+}*/
+@media  (max-width: 768px) {
+    
   }
